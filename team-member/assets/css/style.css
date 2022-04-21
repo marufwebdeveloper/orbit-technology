@@ -1,0 +1,21 @@
+.etmia{
+	text-align: center;
+	display: inline-block;
+	width: 23%;
+	margin: 5px;
+	box-shadow: 0 0 3px #999;
+	padding: 10px;
+	overflow: hidden;
+}
+.etmia .img{
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+.etmia .img img{
+	max-width: 100%;
+	height: auto;
+}
+.etmia:hover{
+	box-shadow: 0 0 10px #666;
+}
