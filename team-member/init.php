@@ -150,3 +150,50 @@ function ss00_settings($need){
 
 	return $settings[$need]??'';
 }
+
+
+/*
+add_action('init', function() {
+
+    register_post_type('team-member', [
+        'label' => __('Team Member', 'txtdomain'),
+        'public' => true,
+        'menu_position' => 5,
+        'menu_icon' => 'dashicons-book',
+        'supports' => ['title', 'editor', 'thumbnail', 'author', 'revisions', 'comments'],
+        'show_in_rest' => true,
+        'rewrite' => ['slug' => 'team-member'],
+        'labels' => [
+            'singular_name' => __('Team-Member', 'txtdomain'),
+            'add_new_item' => __('Add new member', 'txtdomain'),
+            'new_item' => __('New member', 'txtdomain'),
+            'view_item' => __('View member', 'txtdomain'),
+            'not_found' => __('No team member found', 'txtdomain'),
+            'not_found_in_trash' => __('No team member found in trash', 'txtdomain'),
+            'all_items' => __('All Team Member', 'txtdomain'),
+            'insert_into_item' => __('Insert into team-member', 'txtdomain')
+        ],      
+    ]);
+    register_taxonomy('member_type', ['team-member'], [
+        'label' => __('Member Type', 'txtdomain'),
+        'hierarchical' => true,
+        'rewrite' => ['slug' => 'team-member-type'],
+        'show_admin_column' => true,
+        'show_in_rest' => true,
+        'labels' => [
+            'singular_name' => __('Member type', 'txtdomain'),
+            'all_items' => __('All Member types', 'txtdomain'),
+            'edit_item' => __('Edit Member type', 'txtdomain'),
+            'view_item' => __('View Member type', 'txtdomain'),
+            'update_item' => __('Update Member type', 'txtdomain'),
+            'add_new_item' => __('Add New Member type', 'txtdomain'),
+            'new_item_name' => __('New Member type Name', 'txtdomain'),
+            'search_items' => __('Search Member types', 'txtdomain'),
+            'popular_items' => __('Popular Member types', 'txtdomain'),
+            'separate_items_with_commas' => __('Separate authors with comma', 'txtdomain'),
+            'choose_from_most_used' => __('Choose from most used member type', 'txtdomain'),
+            'not_found' => __('No Member types found', 'txtdomain'),
+        ]
+    ]);
+});
+*/
